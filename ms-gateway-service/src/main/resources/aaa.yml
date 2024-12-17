@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ms-gateway-service
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id: r1
+        - uri: lb://ms-employee-service
+
+server:
+  port: 8888
+
